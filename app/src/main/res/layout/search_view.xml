@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/search_layout"
     android:layout_width="match_parent"
     android:layout_height="?attr/actionBarSize"
     android:background="?attr/colorPrimaryVariant"
-    android:elevation="1dp">
+    android:elevation="1dp"
+    tools:ignore="Overdraw">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -21,6 +23,7 @@
             android:imeOptions="actionSearch"
             android:inputType="text"
             android:paddingEnd="4dp"
+            android:paddingStart="0dp"
             android:textSize="16sp"
             android:theme="@style/Theme.Masako.TextColor">
             <requestFocus/>

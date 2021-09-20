@@ -22,7 +22,7 @@
             android:textColor="@color/white"
             android:text="@string/title_recipes_by_category"
             android:fontFamily="@font/nunito_sans_bold"
-            android:textSize="@dimen/twenty_dp"
+            android:textSize="@dimen/twenty_sp"
             android:gravity="center_vertical"/>
 
     </androidx.appcompat.widget.Toolbar>

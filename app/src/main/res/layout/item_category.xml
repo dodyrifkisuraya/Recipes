@@ -28,6 +28,7 @@
         app:layout_constraintTop_toBottomOf="@id/icon_category"
         android:layout_marginTop="4dp"
         android:theme="@style/Theme.Masako.TextColor"
-        android:textSize="@dimen/thirteen_dp"/>
+        android:maxLines="2"
+        android:textSize="@dimen/twelve_sp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

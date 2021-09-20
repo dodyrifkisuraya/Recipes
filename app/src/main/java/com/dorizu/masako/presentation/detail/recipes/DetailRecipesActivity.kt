@@ -165,7 +165,7 @@ class DetailRecipesActivity : AppCompatActivity() {
                     hiddenObject.visibility = View.GONE
                     iconExpand.setBackgroundResource(R.drawable.ic_down_24)
                 }
-                View.GONE -> {
+                else -> {
                     TransitionManager.beginDelayedTransition(viewGroup, AutoTransition())
                     hiddenObject.visibility = View.VISIBLE
                     iconExpand.setBackgroundResource(R.drawable.ic_up_24)

@@ -14,7 +14,7 @@
         android:layout_marginBottom="@dimen/eight_dp"
         android:fontFamily="@font/nunito_sans_semibold"
         android:text="@string/title_error_category"
-        android:textSize="@dimen/sixten_dp"
+        android:textSize="@dimen/sixten_sp"
         android:theme="@style/Theme.Masako.TextColor"
         app:layout_constraintBottom_toTopOf="@id/subtitle_error_category"
         app:layout_constraintEnd_toEndOf="parent"
