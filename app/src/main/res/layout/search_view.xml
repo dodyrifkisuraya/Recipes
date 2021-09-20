@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/search_layout"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="?attr/colorPrimaryVariant"
+    android:elevation="1dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/et_search_recipes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:autofillHints="@string/suggestion_search"
+            android:background="@null"
+            android:hint="@string/suggestion_search"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:paddingEnd="4dp"
+            android:textSize="16sp"
+            android:theme="@style/Theme.Masako.TextColor">
+            <requestFocus/>
+        </EditText>
+
+        <ImageButton
+            android:id="@+id/ib_clear"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/button_description"
+            android:src="@drawable/ic_baseline_clear_24"
+            android:visibility="gone"
+            app:tint="@color/white" />
+
+    </RelativeLayout>
+
+</androidx.appcompat.widget.Toolbar>

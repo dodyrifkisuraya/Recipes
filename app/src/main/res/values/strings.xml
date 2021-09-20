@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Masako</string>
+
+    <string name="menu_favorite">Favorite</string>
+    <string name="image_description">Gambar</string>
+    <string name="button_description">Tombol</string>
+
+    <string name="suggestion_search">Mau masak apa hari ini?</string>
+    <string name="title_category">Kategori buat kamu</string>
+    <string name="title_saved_recipes">Resep Disimpan</string>
+    <string name="subtitle_saved_recipes">Lihat daftar resep yang telah disimpan</string>
+    <string name="title_recommendation">Rekomendasi</string>
+    <string name="title_recipes_by_category">Resep per Kategori</string>
+    <string name="title_difficulty">Level</string>
+    <string name="title_time">Waktu</string>
+    <string name="title_portion">Porsi</string>
+    <string name="title_description_recipes">Deskripsi resep</string>
+    <string name="title_ingredients">Bahan-bahan</string>
+    <string name="title_step">Langkah pembuatan</string>
+    <string name="title_saved">Saved</string>
+    <style name="title_empty_data">Data Kosong</style>
+    <string name="title_error_category">Gagal dapat memuat konten</string>
+    <string name="subtitle_error_category">Maaf, terjadi kesalahan saat memuat informasi</string>
+    <string name="reload">Muat Ulang</string>
+
+    <string name="dummy_title_recipes">Resep Gimbal Udang, Satu yang Unik dari Kota Semarang</string>
+    <string name="dummy_difficulty">Mudah</string>
+    <string name="dummy_time">30 Menit</string>
+    <string name="dummy_portion">5 Porsi</string>
+    <string name="dummy_desc">Bagi para penggemar kuliner, tentu perpaduan rasa cokelat dan keju bukanlah hal yang asing lagi. Seperti yang kita tahu, pisang merupakan salah satu buah paling favorit di Indonesia, sedangkan cokelat adalah rasa yang selalu ada hampir di semua jenis dessert.</string>
+    <string name="dummy_title_category">Masakan Tradisional</string>
+    <string name="dummy_number">1</string>
+    <string name="dummy_ingredient">500 ml fresh milk/susu UHT rasa plain dingin (boleh digantikan dengan 500 ml air dingin)</string>
+
+</resources>

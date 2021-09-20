@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".presentation.detail.recipes.DetailRecipesActivity"
+    tools:showIn="@layout/activity_detail_recipes">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_content_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sixten_dp"
+        android:paddingBottom="100dp">
+
+        <TextView
+            android:id="@+id/tv_name_recipes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/sixten_dp"
+            android:layout_marginEnd="@dimen/sixty_four_dp"
+            android:fontFamily="@font/nunito_sans_bold"
+            tools:text="@string/dummy_title_recipes"
+            android:textSize="@dimen/twenty_sp"
+            android:theme="@style/Theme.Masako.TextColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_left"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.333" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_right"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.666" />
+
+        <View
+            android:id="@+id/background_info_recipe"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginHorizontal="@dimen/sixten_dp"
+            android:layout_marginTop="@dimen/sixten_dp"
+            android:background="@drawable/box_rounded_outline"
+            android:theme="@style/Theme.Masako.ViewGroupColor"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_level_difficulty"
+            app:layout_constraintTop_toBottomOf="@id/tv_name_recipes" />
+
+        <View
+            android:id="@+id/divider_left"
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_marginVertical="@dimen/twelve_dp"
+            android:background="@color/grey_trans"
+            app:layout_constraintBottom_toBottomOf="@id/background_info_recipe"
+            app:layout_constraintStart_toEndOf="@id/guideline_left"
+            app:layout_constraintTop_toTopOf="@id/background_info_recipe" />
+
+        <View
+            android:id="@+id/divider_right"
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_marginVertical="@dimen/twelve_dp"
+            android:background="@color/grey_trans"
+            app:layout_constraintBottom_toBottomOf="@id/background_info_recipe"
+            app:layout_constraintStart_toEndOf="@id/guideline_right"
+            app:layout_constraintTop_toTopOf="@id/background_info_recipe" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/group_background_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="background_info_recipe, divider_left, divider_right" />
+
+        <TextView
+            android:id="@+id/tv_title_difficulty"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/sixten_dp"
+            android:layout_marginTop="@dimen/sixten_dp"
+            android:gravity="center"
+            android:text="@string/title_difficulty"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_left"
+            app:layout_constraintStart_toStartOf="@id/background_info_recipe"
+            app:layout_constraintTop_toTopOf="@id/background_info_recipe" />
+
+        <TextView
+            android:id="@+id/tv_level_difficulty"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/sixten_dp"
+            android:layout_marginEnd="@dimen/sixten_dp"
+            android:fontFamily="@font/nunito_sans_semibold"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingBottom="@dimen/sixten_dp"
+            android:text="@string/dummy_difficulty"
+            android:textSize="@dimen/sixten_sp"
+            android:theme="@style/Theme.Masako.TextColor"
+            app:layout_constraintBottom_toBottomOf="@id/background_info_recipe"
+            app:layout_constraintEnd_toEndOf="@id/guideline_left"
+            app:layout_constraintStart_toStartOf="@id/background_info_recipe"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title_difficulty" />
+
+        <TextView
+            android:id="@+id/tv_title_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/sixten_dp"
+            android:layout_marginTop="@dimen/sixten_dp"
+            android:gravity="center"
+            android:text="@string/title_time"
+            app:layout_constraintEnd_toEndOf="@id/guideline_right"
+            app:layout_constraintStart_toStartOf="@id/guideline_left"
+            app:layout_constraintTop_toTopOf="@id/background_info_recipe" />
+
+        <TextView
+            android:id="@+id/tv_time_cook"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito_sans_semibold"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="@string/dummy_time"
+            android:textSize="@dimen/sixten_sp"
+            android:theme="@style/Theme.Masako.TextColor"
+            app:layout_constraintEnd_toEndOf="@id/tv_title_time"
+            app:layout_constraintStart_toStartOf="@+id/tv_title_time"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title_time" />
+
+        <TextView
+            android:id="@+id/tv_title_portion"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/sixten_dp"
+            android:layout_marginTop="@dimen/sixten_dp"
+            android:gravity="center"
+            android:text="@string/title_portion"
+            app:layout_constraintEnd_toEndOf="@+id/background_info_recipe"
+            app:layout_constraintStart_toStartOf="@id/guideline_right"
+            app:layout_constraintTop_toTopOf="@id/background_info_recipe" />
+
+        <TextView
+            android:id="@+id/tv_portion"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito_sans_semibold"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="@string/dummy_portion"
+            android:textSize="@dimen/sixten_sp"
+            android:theme="@style/Theme.Masako.TextColor"
+            app:layout_constraintEnd_toEndOf="@id/tv_title_portion"
+            app:layout_constraintStart_toStartOf="@+id/tv_title_portion"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title_portion" />
+
+        <RelativeLayout
+            android:id="@+id/rl_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/twelve_dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:paddingVertical="@dimen/eight_dp"
+            app:layout_constraintTop_toBottomOf="@id/background_info_recipe"
+            tools:ignore="UnusedAttribute">
+
+            <TextView
+                android:id="@+id/tv_title_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/sixten_dp"
+                android:layout_toStartOf="@id/btn_expand_description"
+                android:fontFamily="@font/nunito_sans_semibold"
+                android:includeFontPadding="false"
+                android:text="@string/title_description_recipes"
+                android:textSize="@dimen/twenty_sp"
+                android:theme="@style/Theme.Masako.TextColor" />
+
+            <Button
+                android:id="@+id/btn_expand_description"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/sixten_dp"
+                android:background="@drawable/ic_down_24"
+                android:includeFontPadding="false" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/sixten_dp"
+            android:layout_marginTop="@dimen/eight_dp"
+            android:fontFamily="@font/nunito_sans"
+            android:text="@string/dummy_desc"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@+id/rl_description" />
+
+        <RelativeLayout
+            android:id="@+id/rl_ingredient"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/twelve_dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:paddingVertical="@dimen/eight_dp"
+            app:layout_constraintTop_toBottomOf="@id/tv_description"
+            tools:ignore="UnusedAttribute">
+
+            <TextView
+                android:id="@+id/tv_title_ingredient"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@+id/btn_expand_ingredients"
+                android:layout_marginHorizontal="@dimen/sixten_dp"
+                android:fontFamily="@font/nunito_sans_semibold"
+                android:includeFontPadding="false"
+                android:text="@string/title_ingredients"
+                android:textSize="@dimen/twenty_sp"
+                android:theme="@style/Theme.Masako.TextColor" />
+
+            <Button
+                android:id="@+id/btn_expand_ingredients"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/sixten_dp"
+                android:background="@drawable/ic_up_24"
+                android:includeFontPadding="false" />
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_ingredients"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/eight_dp"
+            android:nestedScrollingEnabled="false"
+            app:layout_constraintTop_toBottomOf="@id/rl_ingredient"
+            tools:listitem="@layout/item_ingredients" />
+
+        <RelativeLayout
+            android:id="@+id/rl_step"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/twelve_dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:paddingVertical="@dimen/eight_dp"
+            app:layout_constraintTop_toBottomOf="@id/rv_ingredients"
+            tools:ignore="UnusedAttribute">
+
+            <TextView
+                android:id="@+id/tv_title_step"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@id/btn_expand_step"
+                android:layout_marginHorizontal="@dimen/sixten_dp"
+                android:fontFamily="@font/nunito_sans_semibold"
+                android:includeFontPadding="false"
+                android:text="@string/title_step"
+                android:textSize="@dimen/twenty_sp"
+                android:theme="@style/Theme.Masako.TextColor" />
+
+            <Button
+                android:id="@+id/btn_expand_step"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/sixten_dp"
+                android:background="@drawable/ic_up_24"
+                android:includeFontPadding="false" />
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_step"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/eight_dp"
+            android:nestedScrollingEnabled="false"
+            app:layout_constraintTop_toBottomOf="@id/rl_step"
+            tools:listitem="@layout/item_ingredients" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/group_detail_recipes"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:visibility="gone"
+            app:constraint_referenced_ids="tv_name_recipes,group_background_info, tv_level_difficulty, tv_title_difficulty, tv_title_time, tv_time_cook, tv_title_portion, tv_portion, rl_description, rl_ingredient, rv_ingredients, rl_step, rv_step" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

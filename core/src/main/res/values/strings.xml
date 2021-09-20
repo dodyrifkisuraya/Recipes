@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="image_description">Gambar</string>
+    <string name="dummy_difficulty">Mudah</string>
+    <string name="dummy_title_recipes">Resep Gimbal Udang, Satu yang Unik dari Kota Semarang</string>
+    <string name="dummy_info_recipes">Mudah · 30 Menit · 4 Porsi</string>
+
+    <string name="title_empty_data">Data Kosong</string>
+    <string name="title_loading">Memuat Data…</string>
+</resources>

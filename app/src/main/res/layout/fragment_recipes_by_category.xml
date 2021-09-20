@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".presentation.category.RecipesByCategoryFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_recipe_by_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/item_recipes"
+        app:spanCount="2"
+        app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
+        android:orientation="vertical"
+        android:paddingVertical="@dimen/sixten_dp"
+        android:paddingHorizontal="10dp"
+        android:clipToPadding="false"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <include
+        android:id="@+id/view_loading_data"
+        layout="@layout/view_loading"
+        android:visibility="visible"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
