@@ -18,7 +18,7 @@
     <string name="title_ingredients">Bahan-bahan</string>
     <string name="title_step">Langkah pembuatan</string>
     <string name="title_saved">Saved</string>
-    <string name="title_error_category">Gagal dapat memuat konten</string>
+    <string name="title_error_category">Gagal memuat konten</string>
     <string name="subtitle_error_category">Maaf, terjadi kesalahan saat memuat informasi</string>
     <string name="reload">Muat Ulang</string>
 

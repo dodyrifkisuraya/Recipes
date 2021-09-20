@@ -29,6 +29,10 @@ dependencies {
     implementation "androidx.room:room-rxjava2:$room_version"
     implementation "androidx.lifecycle:lifecycle-reactivestreams-ktx:$lifecycle_version"
 
+    //FIREBASE CRASHLYTICS
+    implementation "com.google.firebase:firebase-analytics:$firebase_analytics_version"
+    implementation "com.google.firebase:firebase-crashlytics:$firebase_crashlytics_version"
+
     //TIMBER
     implementation "com.jakewharton.timber:timber:$timber_version"
 

@@ -30,6 +30,11 @@
         tools:listitem="@layout/item_recipes" />
 
     <include
+        android:id="@+id/view_empty_data"
+        layout="@layout/view_empty"
+        android:visibility="gone"/>
+
+    <include
         android:id="@+id/view_loading_data"
         layout="@layout/view_loading"
         android:visibility="gone"/>

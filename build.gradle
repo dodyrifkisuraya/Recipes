@@ -36,6 +36,11 @@ buildscript {
         sqlcipher_version = "4.4.0"
         sql_ktx_version = "2.1.0"
 
+        google_service_version = "4.3.10"
+        firebase_crachlytics_gradle_version = "2.7.1"
+        firebase_analytics_version = "19.0.1"
+        firebase_crashlytics_version = "18.2.1"
+
         timber_version = "5.0.1"
         lottie_version = "4.1.0"
         shimmer_version = "0.5.0"
@@ -51,6 +56,8 @@ buildscript {
         classpath "com.android.tools.build:gradle:4.2.2"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
         classpath "com.google.dagger:hilt-android-gradle-plugin:$hilt_version"
+        classpath "com.google.gms:google-services:$google_service_version"
+        classpath "com.google.firebase:firebase-crashlytics-gradle:$firebase_crachlytics_gradle_version"
         classpath "com.squareup.leakcanary:leakcanary-deobfuscation-gradle-plugin:$leakcanary_version"
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files

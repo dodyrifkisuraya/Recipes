@@ -49,8 +49,11 @@ class SearchActivity : AppCompatActivity() {
                     binding.viewLoadingData.root.visibility = View.VISIBLE
                 }
                 is ResultState.Error -> {
-                    binding.viewLoadingData.root.visibility = View.GONE
-                    Toast.makeText(this, res.message.toString(), Toast.LENGTH_SHORT).show()
+                    with(binding){
+                        viewLoadingData.root.visibility = View.GONE
+                        viewEmptyData.root.visibility = View.VISIBLE
+                        viewEmptyData.tvTitleEmpty.text = res.message
+                    }
                 }
                 is ResultState.Empty -> {
                     binding.viewLoadingData.root.visibility = View.GONE
